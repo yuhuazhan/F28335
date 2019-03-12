@@ -24,4 +24,26 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>DSP2833x_common</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/DSP2833x_common</locationURI>
+		</link>
+		<link>
+			<name>DSP2833x_headers</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/DSP2833x_headers</locationURI>
+		</link>
+		<link>
+			<name>FPUfastRTS</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/FPUfastRTS</locationURI>
+		</link>
+		<link>
+			<name>IQmath</name>
+			<type>2</type>
+			<locationURI>WORKSPACE_LOC/IQmath</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
