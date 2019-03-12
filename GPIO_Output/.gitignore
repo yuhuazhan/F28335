@@ -3,5 +3,6 @@ Release/*
 .launches/*
 .settings/*
 targetConfigs/*
-
+targetConfigs/
 /Debug/
+

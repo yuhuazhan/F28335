@@ -45,7 +45,6 @@
 									<listOptionValue builtIn="false" value="${PROJECT_LOC}\DSP2833x_headers\include"/>
 									<listOptionValue builtIn="false" value="${PROJECT_LOC}\FPUfastRTS\V100\include"/>
 									<listOptionValue builtIn="false" value="${PROJECT_LOC}\IQmath\v160\include"/>
-									<listOptionValue builtIn="false" value="${PROJECT_LOC}\APPS"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS.66824520" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS"/>
@@ -153,7 +152,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="DSP2833x_headers/cmd/DSP2833x_Headers_BIOS.cmd|DSP2833x_common/source/DSP2833x_SWPrioritizedPieVect.c|DSP2833x_common/source/DSP2833x_SWPrioritizedDefaultIsr.c|DSP2833x_common/cmd/F28335.cmd" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
