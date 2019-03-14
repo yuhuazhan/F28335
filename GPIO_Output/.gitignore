@@ -6,3 +6,4 @@ targetConfigs/*
 targetConfigs/
 /Debug/
 
+/Release/

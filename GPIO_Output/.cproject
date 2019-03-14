@@ -44,11 +44,10 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP.1062062453" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.INCLUDE_PATH.1768356524" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}\DSP2833x_common\include"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}\DSP2833x_headers\include"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}\FPUfastRTS\V100\include"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}\IQmath\v160\include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}\..\DSP2833x_common\include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}\..\DSP2833x_headers\include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}\..\FPUfastRTS\V100\include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}\..\IQmath\v160\include"/>
 								</option>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS.66824520" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__CPP_SRCS.708857820" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__CPP_SRCS"/>
@@ -64,14 +63,14 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP.1029688792" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.SEARCH_PATH.1878764790" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}/IQmath/v160/lib"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}/FPUfastRTS/V100/lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../IQmath/v160/lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../FPUfastRTS/V100/lib"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.LIBRARY.1502403044" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="libc.a"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}/FPUfastRTS/V100/lib/rts2800_fpu32_fast_supplement.lib"/>
-									<listOptionValue builtIn="false" value="${SRC_ROOT}/IQmath/v160/lib/IQmath_fpu32.lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../FPUfastRTS/V100/lib/rts2800_fpu32_fast_supplement.lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../IQmath/v160/lib/IQmath_fpu32.lib"/>
 								</option>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD_SRCS.1995483661" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD2_SRCS.1557027389" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD2_SRCS"/>
@@ -81,7 +80,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="DSP2833x_headers/cmd/DSP2833x_Headers_BIOS.cmd|DSP2833x_common/source/DSP2833x_SWPrioritizedPieVect.c|DSP2833x_common/source/DSP2833x_SWPrioritizedDefaultIsr.c|DSP2833x_common/cmd/F28335.cmd" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="DSP2833X_common/source/DSP2833x_SWPrioritizedPieVect.c|DSP2833X_common/source/DSP2833x_SWPrioritizedDefaultIsr.c|DSP2833X_headers/cmd/DSP2833x_Headers_BIOS.cmd|DSP2833X_common/cmd/F28335.cmd" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -126,8 +125,13 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP.1955106107" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.INCLUDE_PATH.967535686" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../DSP2833x_common/include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../DSP2833x_headers/include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../FPUfastRTS/V100/include"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../IQmath/v160/include"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.ADVICE__PERFORMANCE.94741570" name="Provide advice on optimization techniques (--advice:performance)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compilerID.ADVICE__PERFORMANCE" value="--advice:performance=all" valueType="string"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS.1216389241" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__C_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__CPP_SRCS.1062462957" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__CPP_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__ASM_SRCS.260407402" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.compiler.inputType__ASM_SRCS"/>
@@ -142,10 +146,14 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP.1947109762" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.SEARCH_PATH.1604857397" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../IQmath/v160/lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../FPUfastRTS/V100/lib"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.LIBRARY.1118185817" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="libc.a"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../FPUfastRTS/V100/lib/rts2800_fpu32_fast_supplement.lib"/>
+									<listOptionValue builtIn="false" value="${PROJECT_LOC}/../IQmath/v160/lib/IQmath_fpu32.lib"/>
 								</option>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD_SRCS.504032697" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD2_SRCS.1646340441" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_18.1.exeLinker.inputType__CMD2_SRCS"/>
@@ -155,7 +163,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="DSP2833X_common/source/DSP2833x_SWPrioritizedPieVect.c|DSP2833X_common/source/DSP2833x_SWPrioritizedDefaultIsr.c|DSP2833X_headers/cmd/DSP2833x_Headers_BIOS.cmd|DSP2833X_common/cmd/F28335.cmd" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
